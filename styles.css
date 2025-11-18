@@ -1,14 +1,14 @@
 /* ===== Reset & Variables ===== */
 :root {
-    --primary-color: #2bbc8a;
-    --secondary-color: #1a1a2e;
-    --accent-color: #ff6b6b;
-    --text-color: #333;
-    --text-light: #666;
-    --bg-light: #f8f9fa;
-    --bg-white: #ffffff;
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+    --primary-color: #00d9ff;
+    --secondary-color: #0a0a0a;
+    --accent-color: #00d9ff;
+    --text-color: #e0e0e0;
+    --text-light: #a0a0a0;
+    --bg-light: #1a1a1a;
+    --bg-white: #0a0a0a;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.5);
     --transition: all 0.3s ease;
 }
 
@@ -27,6 +27,7 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     overflow-x: hidden;
+    background: #0a0a0a;
 }
 
 .container {
@@ -106,7 +107,7 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--text-color);
+    background: #ffffff;
     transition: var(--transition);
 }
 
@@ -116,7 +117,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
     color: white;
     text-align: center;
     padding: 80px 20px 40px;
@@ -252,7 +253,7 @@ section {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: var(--secondary-color);
+    color: #ffffff;
     position: relative;
     display: inline-block;
     left: 50%;
@@ -298,7 +299,7 @@ section {
 .highlight-item {
     text-align: center;
     padding: 2rem;
-    background: white;
+    background: #1a1a1a;
     border-radius: 10px;
     box-shadow: var(--shadow);
     transition: var(--transition);
@@ -318,7 +319,7 @@ section {
 .highlight-item h3 {
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: var(--secondary-color);
+    color: #ffffff;
 }
 
 .highlight-item p {
@@ -328,7 +329,7 @@ section {
 
 /* ===== Skills Section ===== */
 .skills {
-    background: white;
+    background: #0a0a0a;
 }
 
 .skills-grid {
@@ -355,7 +356,7 @@ section {
 .skill-category h3 {
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-    color: var(--secondary-color);
+    color: #ffffff;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -373,18 +374,20 @@ section {
 
 .skill-tag {
     padding: 0.5rem 1rem;
-    background: white;
+    background: #0a0a0a;
     border-radius: 20px;
     font-size: 0.9rem;
-    color: var(--text-color);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid #333;
     transition: var(--transition);
 }
 
 .skill-tag:hover {
     background: var(--primary-color);
-    color: white;
+    color: #0a0a0a;
     transform: translateY(-2px);
+    border-color: var(--primary-color);
 }
 
 /* ===== Projects Section ===== */
@@ -400,7 +403,7 @@ section {
 }
 
 .project-card {
-    background: white;
+    background: #1a1a1a;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: var(--shadow);
@@ -416,7 +419,7 @@ section {
 .project-icon {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #000000 0%, #00d9ff 100%);
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -432,7 +435,7 @@ section {
 .project-card h3 {
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    color: var(--secondary-color);
+    color: #ffffff;
 }
 
 .project-card p {
@@ -460,7 +463,7 @@ section {
     text-align: center;
     margin-top: 3rem;
     padding: 2rem;
-    background: white;
+    background: #1a1a1a;
     border-radius: 10px;
     box-shadow: var(--shadow);
 }
@@ -468,7 +471,7 @@ section {
 .github-stats h3 {
     font-size: 1.8rem;
     margin-bottom: 2rem;
-    color: var(--secondary-color);
+    color: #ffffff;
 }
 
 .github-stats img {
@@ -479,7 +482,7 @@ section {
 
 /* ===== Contact Section ===== */
 .contact {
-    background: white;
+    background: #0a0a0a;
 }
 
 .contact-content {
@@ -524,7 +527,7 @@ section {
 
 .contact-card h3 {
     font-size: 1.4rem;
-    color: var(--secondary-color);
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
