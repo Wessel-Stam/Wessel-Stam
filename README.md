@@ -16,9 +16,7 @@ Welcome to my GitHub profile! I'm a passionate developer and information securit
 
 ## 🛠️ Technologies & Tools
 
-![](https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=javascript&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=2bbc8a)
-![](https://img.shields.io/badge/Code-TypeScript-informational?style=flat&logo=typescript&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Tools-Git-informational?style=flat&logo=git&logoColor=white&color=2bbc8a)
 ![](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=2bbc8a)
 
@@ -30,9 +28,7 @@ Welcome to my GitHub profile! I'm a passionate developer and information securit
 ## 📫 How to Reach Me
 
 - 💼 [LinkedIn](https://www.linkedin.com/in/wessel-stam)
-- 🐦 [Twitter](https://twitter.com/wessel_stam)
-- 📧 Email: wessel.stam@example.com
-
+  
 ## ⚡ Fun Fact
 
 I believe that great code is not just functional, but also readable, maintainable, and elegant!
