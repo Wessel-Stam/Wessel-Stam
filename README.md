@@ -27,7 +27,7 @@ Welcome to my GitHub profile! I'm a passionate developer and information securit
 
 ## 📫 How to Reach Me
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/wessel-stam)
+- 💼 [LinkedIn](https://www.linkedin.com/in/wesselstam)
   
 ## ⚡ Fun Fact
 
