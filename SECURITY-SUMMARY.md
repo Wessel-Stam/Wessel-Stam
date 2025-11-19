@@ -118,21 +118,41 @@ These alerts flag the use of `debug=True` in Flask's `app.run()` method. However
 - Minimal base image
 - No unnecessary packages
 
-## Vulnerabilities Found
+## Vulnerabilities Found and Fixed
 
-### Critical: 0
+### Initial Scan Results
+During dependency scanning, the following vulnerabilities were identified:
+
+1. **Gunicorn 21.2.0** - HTTP Request/Response Smuggling (CVE-2024-1135)
+   - **Severity**: High
+   - **Status**: ✅ FIXED - Updated to gunicorn 22.0.0
+   - **Impact**: Could allow request smuggling and endpoint restriction bypass
+   - **Resolution**: Upgraded to patched version 22.0.0
+
+2. **Werkzeug 3.0.1** - Remote Code Execution via Debugger
+   - **Severity**: High  
+   - **Status**: ✅ FIXED - Updated to Werkzeug 3.0.3
+   - **Impact**: Debugger vulnerable to remote execution when interacting with attacker-controlled domain
+   - **Resolution**: Upgraded to patched version 3.0.3
+
+### Current Status
+All dependencies have been scanned and updated to secure versions.
+
+### Vulnerability Summary After Fixes
+
+#### Critical: 0
 No critical vulnerabilities found.
 
-### High: 0
-No high-severity vulnerabilities found.
+#### High: 0
+All high-severity vulnerabilities have been patched.
 
-### Medium: 0
+#### Medium: 0
 No medium-severity vulnerabilities found.
 
-### Low: 0
+#### Low: 0
 No low-severity vulnerabilities found.
 
-### Informational: 2
+#### Informational: 2
 1. **Flask Debug Mode (CodeQL)** - False positive, properly mitigated
 2. **Self-signed Certificate Warning** - Expected in development, use proper certs in production
 
@@ -145,7 +165,10 @@ All identified issues have been addressed:
 3. ✅ Documentation: Comprehensive security documentation created
 4. ✅ Configuration: Secure defaults with environment-based settings
 5. ✅ Container security: Hardened Docker configuration
-6. ✅ Dependency management: All versions pinned
+6. ✅ Dependency management: All versions pinned to secure releases
+7. ✅ Gunicorn vulnerability: Updated from 21.2.0 to 22.0.0
+8. ✅ Werkzeug vulnerability: Updated from 3.0.1 to 3.0.3
+9. ✅ All dependencies scanned: No known vulnerabilities remaining
 
 ## Compliance
 

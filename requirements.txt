@@ -8,8 +8,8 @@ Flask-WTF==1.2.1  # CSRF protection
 pyOpenSSL==23.3.0  # SSL/TLS support
 
 # Production Server
-gunicorn==21.2.0  # WSGI HTTP Server
+gunicorn==22.0.0  # WSGI HTTP Server (patched for CVE-2024-1135)
 
 # Utilities
 python-dotenv==1.0.0  # Environment variable management
-Werkzeug==3.0.1  # WSGI utilities
+Werkzeug==3.0.3  # WSGI utilities (patched for debugger vulnerability)
