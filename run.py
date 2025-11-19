@@ -32,6 +32,8 @@ def main():
     
     try:
         # Run with self-signed certificate for HTTPS in development
+        # Debug mode is intentionally enabled for development only
+        # This script exits with error if FLASK_ENV=production (checked above)
         app.run(
             host=host,
             port=port,

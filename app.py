@@ -192,22 +192,22 @@ def health_check():
 
 
 if __name__ == '__main__':
-    # Development server (use Gunicorn for production)
-    debug_mode = os.environ.get('FLASK_ENV') != 'production'
+    # This script should NOT be run directly in production
+    # Use: gunicorn -c gunicorn.conf.py app:app
     
-    if debug_mode:
-        logger.warning("Running in development mode. DO NOT use in production!")
-        app.run(
-            host='0.0.0.0',
-            port=int(os.environ.get('PORT', 5000)),
-            debug=True,
-            ssl_context='adhoc'  # Self-signed cert for development
-        )
-    else:
-        logger.info("Starting production server")
-        # In production, this should be run through Gunicorn/uWSGI
-        app.run(
-            host='0.0.0.0',
-            port=int(os.environ.get('PORT', 5000)),
-            debug=False
-        )
+    if os.environ.get('FLASK_ENV') == 'production':
+        logger.error("SECURITY ERROR: Do not run app.py directly in production!")
+        logger.error("Use: gunicorn -c gunicorn.conf.py app:app")
+        import sys
+        sys.exit(1)
+    
+    # Development server only
+    logger.warning("Running in development mode. DO NOT use in production!")
+    logger.info("For production, use: gunicorn -c gunicorn.conf.py app:app")
+    
+    app.run(
+        host='0.0.0.0',
+        port=int(os.environ.get('PORT', 5000)),
+        debug=True,
+        ssl_context='adhoc'  # Self-signed cert for development
+    )
