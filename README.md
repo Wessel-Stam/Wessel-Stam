@@ -1,6 +1,6 @@
 # Hi there, I'm Wessel Stam 👋
 
-Welcome to my GitHub profile! I'm a passionate developer and information security officer who loves building innovative solutions and secure solutions.
+Welcome to my GitHub profile! I'm a passionate developer and information security officer who loves building innovative and secure solutions.
 
 ## 🚀 About Me
 
